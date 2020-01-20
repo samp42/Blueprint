@@ -15,6 +15,9 @@
 		1E05F4CE23D40C9400D9E743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E05F4CC23D40C9400D9E743 /* Main.storyboard */; };
 		1E05F4DA23D40C9400D9E743 /* BlueprintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05F4D923D40C9400D9E743 /* BlueprintTests.swift */; };
 		1E05F4E523D40C9400D9E743 /* BlueprintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05F4E423D40C9400D9E743 /* BlueprintUITests.swift */; };
+		1E05F4F523D5374500D9E743 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05F4F423D5374500D9E743 /* InfoView.swift */; };
+		1E05F4F723D540DB00D9E743 /* LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05F4F623D540DB00D9E743 /* LeftMenu.swift */; };
+		1E05F4F923D5569900D9E743 /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05F4F823D5569900D9E743 /* mainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		1E05F4E023D40C9400D9E743 /* BlueprintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueprintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E05F4E423D40C9400D9E743 /* BlueprintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueprintUITests.swift; sourceTree = "<group>"; };
 		1E05F4E623D40C9400D9E743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E05F4F423D5374500D9E743 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		1E05F4F623D540DB00D9E743 /* LeftMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenu.swift; sourceTree = "<group>"; };
+		1E05F4F823D5569900D9E743 /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 		1E05F4C023D40C9200D9E743 /* Blueprint */ = {
 			isa = PBXGroup;
 			children = (
+				1E05F4F423D5374500D9E743 /* InfoView.swift */,
+				1E05F4F623D540DB00D9E743 /* LeftMenu.swift */,
+				1E05F4F823D5569900D9E743 /* mainView.swift */,
 				1E05F4C123D40C9200D9E743 /* AppDelegate.swift */,
 				1E05F4C323D40C9200D9E743 /* Document.swift */,
 				1E05F4C523D40C9200D9E743 /* ContentView.swift */,
@@ -269,7 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E05F4F723D540DB00D9E743 /* LeftMenu.swift in Sources */,
+				1E05F4F523D5374500D9E743 /* InfoView.swift in Sources */,
 				1E05F4C423D40C9200D9E743 /* Document.swift in Sources */,
+				1E05F4F923D5569900D9E743 /* mainView.swift in Sources */,
 				1E05F4C223D40C9200D9E743 /* AppDelegate.swift in Sources */,
 				1E05F4C623D40C9200D9E743 /* ContentView.swift in Sources */,
 			);

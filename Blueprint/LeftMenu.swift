@@ -9,9 +9,23 @@
 import SwiftUI
 
 struct LeftMenu: View {
+    //@State var menuIsClicked: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        
+        VStack{
+            Color.blue
+            MenuButton(label: Text("Event")) {
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    Text("Sherbrooke")
+                }
+                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    Text("Montreal")
+                }
+            }
+            Text("hello")
+        }.frame(width: 360, height: .infinity).background(/*@START_MENU_TOKEN@*/Color.blue/*@END_MENU_TOKEN@*/)
+    }//.accentColor(.red)
 }
 
 struct LeftMenu_Previews: PreviewProvider {

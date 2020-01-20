@@ -8,9 +8,26 @@
 
 import SwiftUI
 
+/*extension Color {
+    static let lightGray = Color("LightGray")
+}*/
+
 struct InfoView: View {
+    
+    let contentView = ContentView()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+            HStack{
+                //Image("\(teamLogo)")
+                VStack{
+                Text("\(contentView.teamSelected!)")
+                    
+                    Text("Infinite Recharge: 2020")
+                        .font(.body)
+                        .fontWeight(.heavy)
+                }
+            }.frame(width: 360, height: 180, alignment: .center)
+                //.background(.fill(.lightGray))
     }
 }
 
