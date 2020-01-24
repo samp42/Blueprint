@@ -17,16 +17,30 @@ struct ContentView: View {
     
     var body: some View {
         //main divisions
-        HStack{
-            LeftMenu()
-            VStack{
-                Text("world")
-            }.frame(width: .infinity, height: .infinity)
-            VStack{
+        ZStack{
+            MainSectionView()
+            .frame(minWidth: 600, maxWidth: .infinity)
+            HStack{
+                VStack{
+                    EventSelectorView()
+                    LeftMenuView()
+                        .padding(.top, 20)
+                    Spacer()
+                }.padding(.top, 40)
+            .background(/*@START_MENU_TOKEN@*/Color("DarkBlue")/*@END_MENU_TOKEN@*/)
+                .frame(minWidth: 200, maxWidth: 200, minHeight: 0, maxHeight: .infinity, alignment: .leading)
+                
                 Spacer()
-                InfoView()
-            }.frame(width: .infinity, height: .infinity)
-        }.frame(width: .infinity, height: .infinity)
+                    .frame(minWidth: 810.0)
+                
+                VStack{
+                    Spacer()
+                    InfoView()
+                }.frame(width: 240)
+            }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
+
+        }
+        
     }
 }
 

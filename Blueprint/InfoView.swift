@@ -26,7 +26,7 @@ struct InfoView: View {
                         .font(.body)
                         .fontWeight(.heavy)
                 }
-            }.frame(width: 360, height: 180, alignment: .center)
+            }.frame(width: 240, height: 180, alignment: .center)
                 //.background(.fill(.lightGray))
     }
 }

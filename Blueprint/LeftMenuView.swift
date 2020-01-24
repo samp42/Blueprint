@@ -9,8 +9,31 @@
 import SwiftUI
 
 struct LeftMenuView: View {
+    //@State var menuIsClicked: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            
+        VStack{
+            Button(action: {}){
+                Text("Score Board")
+                    .font(.headline)
+                    .frame(width: 200)
+            }.frame(height: 50.0)
+                .cornerRadius(25)
+            
+            Button(action: {}){
+                Text("Teams")
+                    .font(.headline)
+                .frame(width: 200)
+            }.padding(.top, 10.0).frame(height: 50.0)
+            
+            Button(action: {}){
+                Text("Lists")
+                    .font(.headline)
+                .frame(width: 200)
+            }.padding(.top, 10.0).frame(height: 50.0)
+        }.padding(.horizontal, 20)
+        
     }
 }
 

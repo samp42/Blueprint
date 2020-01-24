@@ -9,8 +9,17 @@
 import SwiftUI
 
 struct MainSectionView: View {
+    
+    /*extension Color{
+        static let lightGradientBlue = Color.LightGradientBlue
+        static let darkGradientBlue = Color.DarkGradientBlue
+    }*/
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            LinearGradient(gradient: Gradient(colors: [Color("LightGradientBlue"),Color("DarkGradientBlue")]), startPoint: .top, endPoint: .bottom)
+            Text("No event selected.")
+        }
     }
 }
 
