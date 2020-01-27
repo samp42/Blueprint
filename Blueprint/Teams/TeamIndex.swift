@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-//let teamIndex : [team] = load("teams0.json")
+let teamIndex : [Team] = load("teams0.json")
 /*
 func load<T: Decodable>(_ filename: String, as type: T.type = T.self) -> T{
     
