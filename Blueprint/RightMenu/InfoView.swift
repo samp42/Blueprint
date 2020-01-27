@@ -16,18 +16,23 @@ struct InfoView: View {
     
     let contentView = ContentView()
     var body: some View {
-
+        
             HStack{
                 //Image("\(teamLogo)")
-                VStack{
-                Text("\(contentView.teamSelected!)")
+                VStack(alignment: .leading){
+                    Text("\(contentView.teamSelected!)")
+                        .fontWeight(.heavy)
                     
                     Text("Infinite Recharge: 2020")
                         .font(.body)
-                        .fontWeight(.heavy)
+                    
+                    Text("© Blueprint, 2020")
+                        .font(.caption)
                 }
-            }.frame(width: 240, height: 180, alignment: .center)
-                //.background(.fill(.lightGray))
+                
+            }.frame(width: 240, height: 120, alignment: .center)
+                .background(Color("LightGray"))
+                .foregroundColor(Color("DarkBlue"))
     }
 }
 

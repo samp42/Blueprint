@@ -9,8 +9,49 @@
 import SwiftUI
 
 struct TeamsOrderModeView: View {
+    
+    @State var orderMode: String = "Team Number"
+        
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            HStack{
+                Button(action: {
+                    self.orderMode = "Team Number"
+                }){
+                    Text("Team number")
+                        .frame(width: 130.0)
+                }
+                Button(action: {
+                    self.orderMode = "Seed"
+                }){
+                    Text("Seed")
+                    .frame(width: 130.0)
+                }
+                Button(action: {
+                    self.orderMode = "OPR"
+                }){
+                    Text("OPR")
+                    .frame(width: 130.0)
+                }
+                Button(action: {
+                    self.orderMode = "DPR"
+                }){
+                    Text("DPR")
+                    .frame(width: 130.0)
+                    /*if orderMode=="DPR"{
+                        Text("DPR")
+                        .frame(width: 130.0)
+                        .background(.white)
+                    } else {
+                        Text("DPR")
+                        .frame(width: 130.0)
+                    }*/
+                }
+            }
+            
+        }
+        
+        
     }
 }
 

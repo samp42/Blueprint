@@ -9,31 +9,45 @@
 import SwiftUI
 
 struct LeftMenuView: View {
-    //@State var menuIsClicked: Bool = false
+    @State var viewSelected: String = "Score Board"
+    @State var scoreBoardToggled: Bool = true
+    @State var teamsToggled: Bool = false
+    @State var listsToggled: Bool = false
     
     var body: some View {
             
         VStack{
-            Button(action: {}){
-                Text("Score Board")
-                    .font(.headline)
-                    .frame(width: 200)
-            }.frame(height: 50.0)
-                .cornerRadius(25)
             
-            Button(action: {}){
-                Text("Teams")
-                    .font(.headline)
-                .frame(width: 200)
-            }.padding(.top, 10.0).frame(height: 50.0)
-            
-            Button(action: {}){
-                Text("Lists")
-                    .font(.headline)
-                .frame(width: 200)
-            }.padding(.top, 10.0).frame(height: 50.0)
+                Button(action: {
+                    self.viewSelected = "Score Board"
+                    
+                }){
+                    Text("Score Board")
+                        .frame(width: 200.0, height: 40.0)
+                }.buttonStyle(leftMenuButtonStyleClicked())
+                
+                Spacer()
+                    .frame(height: 10.0)
+                
+                Button(action: {
+                    self.viewSelected = "Teams"
+
+                }){
+                    Text("Teams")
+                        .frame(width: 200.0, height: 40.0)
+                }.buttonStyle(leftMenuButtonStyle())
+                
+                Spacer()
+                    .frame(height: 10.0)
+                
+                Button(action: {
+                    self.viewSelected = "Lists"
+                   
+                }){
+                    Text("Lists")
+                        .frame(width: 200.0, height: 40.0)
+                }.buttonStyle(leftMenuButtonStyle())
         }.padding(.horizontal, 20)
-        
     }
 }
 
