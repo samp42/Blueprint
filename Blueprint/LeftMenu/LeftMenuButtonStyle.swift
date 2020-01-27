@@ -12,7 +12,6 @@ struct leftMenuButtonStyle: ButtonStyle{
     
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-            x
             .foregroundColor(Color.white)
             .background(Color.clear)
             .font(.headline)
