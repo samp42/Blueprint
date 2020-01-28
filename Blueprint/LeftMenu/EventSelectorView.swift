@@ -62,10 +62,10 @@ struct EventSelectorView: View {
                 Text("Montreal")
             }
             
-         }
-         .frame(width: 220.0, height: 50.0)
-         .background(Color("DropButtonBlue"))
-         .cornerRadius(25)
+        }//.eventSelectorStyle()
+         //.frame(width: 220.0, height: 50.0)
+         //.background(Color("DropButtonBlue"))
+         //.cornerRadius(25)
     }
 }
 

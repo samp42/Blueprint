@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Team: Hashable, /*Decodable,*/ Identifiable {
+struct team: Hashable, /*Codable,*/ Identifiable {
     var id: ObjectIdentifier
     
     var city: String //labeled as city
@@ -19,12 +19,4 @@ struct Team: Hashable, /*Decodable,*/ Identifiable {
     var teamNumber: Int //labeled as team_number
     var rookieYear: Int //labeled as rookie_year
     
-    enum CodingKeys: String, CodingKey{
-        case city
-        case stateProv = "state_prov"
-        case country
-        case nickname
-        case teamNumber = "team_number"
-        case rookieYear = "rookie_year"
-    }
 }

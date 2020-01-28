@@ -9,44 +9,33 @@
 import SwiftUI
 
 struct LeftMenuView: View {
-    @State var viewSelected: String = "Score Board"
-    @State var scoreBoardToggled: Bool = true
-    @State var teamsToggled: Bool = false
-    @State var listsToggled: Bool = false
-    
+    @State public var viewSelected = 0
+
     var body: some View {
             
         VStack{
+             TabView(selection: $viewSelected) {
+                ScoreBoardView()
+                    .tabItem {
+                        Text("Score Board")
+                                       
+                }.tag(0)
+                                   
+                TeamsView()
+                    .tabItem {
+                        Text("Teams")
+                                       
+                 }.tag(1)
+                                   
+                 Text("display lists")
+                    .tabItem {
+                        Text("Lists")
+                                       
+                 }.tag(0)
+                               
+             }
+             .padding()
             
-                Button(action: {
-                    self.viewSelected = "Score Board"
-                    
-                }){
-                    Text("Score Board")
-                        .frame(width: 200.0, height: 40.0)
-                }.buttonStyle(leftMenuButtonStyleClicked())
-                
-                Spacer()
-                    .frame(height: 10.0)
-                
-                Button(action: {
-                    self.viewSelected = "Teams"
-
-                }){
-                    Text("Teams")
-                        .frame(width: 200.0, height: 40.0)
-                }.buttonStyle(leftMenuButtonStyle())
-                
-                Spacer()
-                    .frame(height: 10.0)
-                
-                Button(action: {
-                    self.viewSelected = "Lists"
-                   
-                }){
-                    Text("Lists")
-                        .frame(width: 200.0, height: 40.0)
-                }.buttonStyle(leftMenuButtonStyle())
         }.padding(.horizontal, 20)
     }
 }
