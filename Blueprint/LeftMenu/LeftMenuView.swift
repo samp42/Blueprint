@@ -8,40 +8,59 @@
 
 import SwiftUI
 
+/*class ViewDisplayed: ObservableObject {
+    
+   //@Published var didChange = PassthroughSubject<Void, Never>()
+    
+    var viewSelected = ViewSelected.ScoreBoard { didSet { didChange.send()}}
+}*/
+
+
 struct LeftMenuView: View {
-    @State public var viewSelected = 0
+    //@ObservedObject var currentView = ViewDisplayed()
+    
+    @EnvironmentObject var global: GlobalEnvironment
 
     var body: some View {
             
         VStack{
-             TabView(selection: $viewSelected) {
-                ScoreBoardView()
-                    .tabItem {
-                        Text("Score Board")
-                                       
-                }.tag(0)
-                                   
-                TeamsView()
-                    .tabItem {
-                        Text("Teams")
-                                       
-                 }.tag(1)
-                                   
-                 Text("display lists")
-                    .tabItem {
-                        Text("Lists")
-                                       
-                 }.tag(0)
-                               
-             }
-             .padding()
+            EventSelectorView()
+            
+            Button(action: {
+                self.global.viewSelected = ViewSelected.ScoreBoard
+            }){
+                Text("Score Board")
+                    .frame(width:180, height:40)
+            }.buttonStyle(leftMenuButtonStyle())
+            
+            Spacer()
+                .frame(height: 10)
+            
+            Button(action: {
+                self.global.viewSelected = ViewSelected.Teams
+            }){
+                Text("Teams")
+                    .frame(width:180, height:40)
+            }.buttonStyle(leftMenuButtonStyle())
+            
+            Spacer()
+            .frame(height: 10)
+            
+            Button(action: {
+                self.global.viewSelected = ViewSelected.Lists
+            }){
+                Text("Lists")
+                    .frame(width:180, height:40)
+            }.buttonStyle(leftMenuButtonStyle())
             
         }.padding(.horizontal, 20)
     }
 }
 
+
+/*
 struct LeftMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        LeftMenuView()
+        LeftMenuView(viewSelected: $viewSelected)
     }
-}
+}*/

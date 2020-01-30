@@ -22,7 +22,6 @@ struct InfoView: View {
                 VStack(alignment: .leading){
                     Text("\(contentView.teamSelected!)")
                         .fontWeight(.heavy)
-                        .font(.headline)
                     
                     Text("Infinite Recharge: 2020")
                         .font(.body)
@@ -31,11 +30,9 @@ struct InfoView: View {
                         .font(.caption)
                 }
                 
-            }.frame(width: 220, height: 100, alignment: .center)
+            }.frame(width: 240, height: 120, alignment: .center)
                 .background(Color("LightGray"))
-                .foregroundColor(Color.black)
-        .cornerRadius(25)
-        .padding(10)
+                .foregroundColor(Color("DarkBlue"))
     }
 }
 

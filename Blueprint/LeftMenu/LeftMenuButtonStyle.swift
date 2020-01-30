@@ -16,17 +16,6 @@ struct leftMenuButtonStyle: ButtonStyle{
             .background(Color.clear)
             .font(.headline)
             .overlay(RoundedRectangle(cornerRadius: 20.0).stroke(Color.white, lineWidth: 1.0))
-    }
-}
-
-struct leftMenuButtonStyleClicked: ButtonStyle {
-    
-    func makeBody(configuration: Self.Configuration) -> some View {
-        configuration.label
-            .foregroundColor(Color.white)
-            .background(Color(white: 1.0, opacity: 0.3))
-            .font(.headline)
-            .cornerRadius(20.0)
-            .overlay(RoundedRectangle(cornerRadius: 20.0).stroke(Color.white, lineWidth: 1.0))
+        //.background(Color(white: 1.0, opacity: 0.3))
     }
 }

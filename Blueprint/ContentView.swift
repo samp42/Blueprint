@@ -8,9 +8,36 @@
 
 import SwiftUI
 
+enum ViewSelected:Int{
+    case ScoreBoard = 0, Teams, Lists
+    
+    func toString() -> String{
+        switch self{
+        case .ScoreBoard:
+            return "Score Board"
+        case .Teams:
+            return "Teams"
+        case .Lists:
+            return "Lists"
+        }
+    }
+}
+
+class GlobalEnvironment: ObservableObject {
+    
+    //@Published var eventSelected? = nil
+    @Published var viewSelected = ViewSelected.Teams
+    
+    /*func getSelectedView(viewToShow: ViewSelected)->Void{
+        viewSelected = ViewSelected.viewToShow
+    }*/
+}
+
 struct ContentView: View {
     
     //variables
+    
+    @EnvironmentObject var global: GlobalEnvironment
     public var teamSelected: Int? = 3990
     public var gameSelected: String? = "Infinite Recharge: 2020"
     
@@ -21,9 +48,6 @@ struct ContentView: View {
             .frame(minWidth: 600, maxWidth: .infinity)
             HStack{
                 VStack{
-                    EventSelectorView()
-                        Spacer()
-                            .frame(height: 100.0)
                     LeftMenuView()
                     Spacer()
                 }.padding(.top, 40)
@@ -34,11 +58,13 @@ struct ContentView: View {
                     .frame(minWidth: 810.0)
                 
                 VStack{
-                    Spacer()
-                    InfoView()
+                    RightMenuView()
                 }.frame(width: 240)
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
 
+            Text("\(global.viewSelected.toString())")
+            
+            
         }
         
     }
@@ -47,6 +73,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(GlobalEnvironment())
     }
 }

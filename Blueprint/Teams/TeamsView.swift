@@ -10,10 +10,12 @@ import SwiftUI
 
 struct TeamsView: View {
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             Text("Teams")
-                .font(.largeTitle)
-                .background(Color.white)
+            .font(.largeTitle)
+            .fontWeight(.heavy)
+            .padding(10.0)
+            
             HStack{
                 Text("Order teams by: ")
                 TeamsOrderModeView()

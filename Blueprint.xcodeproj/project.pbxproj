@@ -16,15 +16,20 @@
 		1E05F4DA23D40C9400D9E743 /* BlueprintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05F4D923D40C9400D9E743 /* BlueprintTests.swift */; };
 		1E05F4E523D40C9400D9E743 /* BlueprintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05F4E423D40C9400D9E743 /* BlueprintUITests.swift */; };
 		1E05F4F523D5374500D9E743 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05F4F423D5374500D9E743 /* InfoView.swift */; };
+		1E0E164123E0DA7900008F7A /* OptionButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E164023E0DA7900008F7A /* OptionButtonStyle.swift */; };
+		1E0E164323E1245200008F7A /* ScoreBoardOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E164223E1245200008F7A /* ScoreBoardOptionsView.swift */; };
+		1E0E164523E1245F00008F7A /* TeamsOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E164423E1245F00008F7A /* TeamsOptionsView.swift */; };
+		1E0E164723E1247400008F7A /* ListsOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E164623E1247400008F7A /* ListsOptionsView.swift */; };
+		1E0E164923E12E9400008F7A /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E164823E12E9400008F7A /* OptionsView.swift */; };
 		1E184A1B23D7EA32002878A8 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E184A1A23D7EA32002878A8 /* matrix.cpp */; };
 		1E38988523DB8A7700478615 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E38988423DB8A7700478615 /* TeamsView.swift */; };
+		1E5996EA23DFB1B8003F895D /* EventSelectorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5996E923DFB1B8003F895D /* EventSelectorStyle.swift */; };
 		1E664F2A23DE7EC60017F2CC /* ScoreBoardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E664F2923DE7EC60017F2CC /* ScoreBoardCellView.swift */; };
 		1E664F2E23DE8BB80017F2CC /* TeamCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E664F2D23DE8BB80017F2CC /* TeamCellView.swift */; };
 		1E664F3023DE8C410017F2CC /* TeamIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E664F2F23DE8C410017F2CC /* TeamIndex.swift */; };
 		1E664F3423DE8CFB0017F2CC /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E664F3323DE8CFB0017F2CC /* Team.swift */; };
 		1E6D2A3E23D9F027004372CE /* RightMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D2A3D23D9F027004372CE /* RightMenuView.swift */; };
 		1E6D2A4023D9F045004372CE /* LeftMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D2A3F23D9F045004372CE /* LeftMenuView.swift */; };
-		1E6D3A2723DCAF5300B048FD /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D3A2623DCAF5300B048FD /* OptionsView.swift */; };
 		1E762FD423DD28B500958B12 /* LeftMenuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E762FD323DD28B500958B12 /* LeftMenuButtonStyle.swift */; };
 		1E8BBCCC23DCB02900BA06C1 /* ActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8BBCCB23DCB02900BA06C1 /* ActionsView.swift */; };
 		1E919B1423DB7D1C00714CD9 /* TeamsOrderModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E919B1323DB7D1C00714CD9 /* TeamsOrderModeView.swift */; };
@@ -68,16 +73,21 @@
 		1E05F4E423D40C9400D9E743 /* BlueprintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueprintUITests.swift; sourceTree = "<group>"; };
 		1E05F4E623D40C9400D9E743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E05F4F423D5374500D9E743 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		1E0E164023E0DA7900008F7A /* OptionButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButtonStyle.swift; sourceTree = "<group>"; };
+		1E0E164223E1245200008F7A /* ScoreBoardOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardOptionsView.swift; sourceTree = "<group>"; };
+		1E0E164423E1245F00008F7A /* TeamsOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsOptionsView.swift; sourceTree = "<group>"; };
+		1E0E164623E1247400008F7A /* ListsOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsOptionsView.swift; sourceTree = "<group>"; };
+		1E0E164823E12E9400008F7A /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		1E184A1923D7EA31002878A8 /* Blueprint-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blueprint-Bridging-Header.h"; sourceTree = "<group>"; };
 		1E184A1A23D7EA32002878A8 /* matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = matrix.cpp; path = Maths/matrix.cpp; sourceTree = "<group>"; };
 		1E38988423DB8A7700478615 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		1E5996E923DFB1B8003F895D /* EventSelectorStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSelectorStyle.swift; sourceTree = "<group>"; };
 		1E664F2923DE7EC60017F2CC /* ScoreBoardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScoreBoardCellView.swift; path = Blueprint/ScoreBoard/ScoreBoardCellView.swift; sourceTree = SOURCE_ROOT; };
 		1E664F2D23DE8BB80017F2CC /* TeamCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCellView.swift; sourceTree = "<group>"; };
 		1E664F2F23DE8C410017F2CC /* TeamIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamIndex.swift; sourceTree = "<group>"; };
 		1E664F3323DE8CFB0017F2CC /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		1E6D2A3D23D9F027004372CE /* RightMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuView.swift; sourceTree = "<group>"; };
 		1E6D2A3F23D9F045004372CE /* LeftMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuView.swift; sourceTree = "<group>"; };
-		1E6D3A2623DCAF5300B048FD /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		1E762FD323DD28B500958B12 /* LeftMenuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuButtonStyle.swift; sourceTree = "<group>"; };
 		1E8BBCCB23DCB02900BA06C1 /* ActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsView.swift; sourceTree = "<group>"; };
 		1E919B1323DB7D1C00714CD9 /* TeamsOrderModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsOrderModeView.swift; sourceTree = "<group>"; };
@@ -185,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				1E95D2DB23DA3C95000F4A8A /* EventSelectorView.swift */,
+				1E5996E923DFB1B8003F895D /* EventSelectorStyle.swift */,
 				1E6D2A3F23D9F045004372CE /* LeftMenuView.swift */,
 				1E762FD323DD28B500958B12 /* LeftMenuButtonStyle.swift */,
 			);
@@ -203,7 +214,11 @@
 			isa = PBXGroup;
 			children = (
 				1E6D2A3D23D9F027004372CE /* RightMenuView.swift */,
-				1E6D3A2623DCAF5300B048FD /* OptionsView.swift */,
+				1E0E164823E12E9400008F7A /* OptionsView.swift */,
+				1E0E164223E1245200008F7A /* ScoreBoardOptionsView.swift */,
+				1E0E164423E1245F00008F7A /* TeamsOptionsView.swift */,
+				1E0E164623E1247400008F7A /* ListsOptionsView.swift */,
+				1E0E164023E0DA7900008F7A /* OptionButtonStyle.swift */,
 				1E05F4F423D5374500D9E743 /* InfoView.swift */,
 				1E8BBCCB23DCB02900BA06C1 /* ActionsView.swift */,
 			);
@@ -376,18 +391,23 @@
 				1E762FD423DD28B500958B12 /* LeftMenuButtonStyle.swift in Sources */,
 				1E05F4F523D5374500D9E743 /* InfoView.swift in Sources */,
 				1E92544D23D8C2AD007B0690 /* TeamsListView.swift in Sources */,
-				1E6D3A2723DCAF5300B048FD /* OptionsView.swift in Sources */,
 				1E664F2A23DE7EC60017F2CC /* ScoreBoardCellView.swift in Sources */,
 				1E05F4C423D40C9200D9E743 /* Document.swift in Sources */,
 				1E664F3423DE8CFB0017F2CC /* Team.swift in Sources */,
+				1E0E164923E12E9400008F7A /* OptionsView.swift in Sources */,
 				1ECCCC6F23DA5408008694DF /* MainSectionView.swift in Sources */,
+				1E0E164523E1245F00008F7A /* TeamsOptionsView.swift in Sources */,
 				1E6D2A4023D9F045004372CE /* LeftMenuView.swift in Sources */,
 				1E184A1B23D7EA32002878A8 /* matrix.cpp in Sources */,
 				1E05F4C223D40C9200D9E743 /* AppDelegate.swift in Sources */,
 				1E92544B23D8C1DF007B0690 /* ScoreBoardView.swift in Sources */,
+				1E0E164123E0DA7900008F7A /* OptionButtonStyle.swift in Sources */,
+				1E5996EA23DFB1B8003F895D /* EventSelectorStyle.swift in Sources */,
 				1E8BBCCC23DCB02900BA06C1 /* ActionsView.swift in Sources */,
 				1E38988523DB8A7700478615 /* TeamsView.swift in Sources */,
 				1E919B1423DB7D1C00714CD9 /* TeamsOrderModeView.swift in Sources */,
+				1E0E164723E1247400008F7A /* ListsOptionsView.swift in Sources */,
+				1E0E164323E1245200008F7A /* ScoreBoardOptionsView.swift in Sources */,
 				1E664F3023DE8C410017F2CC /* TeamIndex.swift in Sources */,
 				1E05F4C623D40C9200D9E743 /* ContentView.swift in Sources */,
 				1E6D2A3E23D9F027004372CE /* RightMenuView.swift in Sources */,

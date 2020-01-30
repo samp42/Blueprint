@@ -12,10 +12,10 @@ struct RightMenuView: View {
     var body: some View {
         VStack{
             ActionsView()
-            ScoreBoardOptionsView()
+            OptionsView()
             Spacer()
             InfoView()
-        }.background(Color.white)
+        }
     }
 }
 

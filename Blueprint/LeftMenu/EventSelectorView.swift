@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct EventSelectorView: View {
-    
     @State public var selectedEvent: String?
     
     var body: some View {
@@ -62,10 +61,9 @@ struct EventSelectorView: View {
                 Text("Montreal")
             }
             
-        }//.eventSelectorStyle()
-         //.frame(width: 220.0, height: 50.0)
-         //.background(Color("DropButtonBlue"))
-         //.cornerRadius(25)
+            }.frame(width: 180.0, height: 50.0).foregroundColor(Color.white)
+            .background(Color.clear)
+            .font(.subheadline)
     }
 }
 

@@ -18,15 +18,6 @@ struct TeamsListView: View {
     
     var body: some View {
         VStack{
-            
-            HStack{
-                Text("Teams")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                    .padding(10.0)
-                Spacer()
-            }
-            
             List{
                 TeamCellView()
                 TeamCellView()
