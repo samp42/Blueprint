@@ -36,6 +36,8 @@
 		1E92544B23D8C1DF007B0690 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92544A23D8C1DF007B0690 /* ScoreBoardView.swift */; };
 		1E92544D23D8C2AD007B0690 /* TeamsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92544C23D8C2AD007B0690 /* TeamsListView.swift */; };
 		1E95D2DC23DA3C95000F4A8A /* EventSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95D2DB23DA3C95000F4A8A /* EventSelectorView.swift */; };
+		1EC1A95A23E4801A00CDDCA0 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1A95923E4801A00CDDCA0 /* TeamView.swift */; };
+		1EC1A95C23E4805600CDDCA0 /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1A95B23E4805600CDDCA0 /* TeamDetailView.swift */; };
 		1ECCCC6F23DA5408008694DF /* MainSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECCCC6E23DA5408008694DF /* MainSectionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +96,8 @@
 		1E92544A23D8C1DF007B0690 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
 		1E92544C23D8C2AD007B0690 /* TeamsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsListView.swift; sourceTree = "<group>"; };
 		1E95D2DB23DA3C95000F4A8A /* EventSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSelectorView.swift; sourceTree = "<group>"; };
+		1EC1A95923E4801A00CDDCA0 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		1EC1A95B23E4805600CDDCA0 /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
 		1ECCCC6E23DA5408008694DF /* MainSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +246,8 @@
 				1E92544C23D8C2AD007B0690 /* TeamsListView.swift */,
 				1E919B1323DB7D1C00714CD9 /* TeamsOrderModeView.swift */,
 				1E664F3323DE8CFB0017F2CC /* Team.swift */,
+				1EC1A95B23E4805600CDDCA0 /* TeamDetailView.swift */,
+				1EC1A95923E4801A00CDDCA0 /* TeamView.swift */,
 				1E664F2F23DE8C410017F2CC /* TeamIndex.swift */,
 			);
 			path = Teams;
@@ -389,8 +395,10 @@
 				1E95D2DC23DA3C95000F4A8A /* EventSelectorView.swift in Sources */,
 				1E664F2E23DE8BB80017F2CC /* TeamCellView.swift in Sources */,
 				1E762FD423DD28B500958B12 /* LeftMenuButtonStyle.swift in Sources */,
+				1EC1A95C23E4805600CDDCA0 /* TeamDetailView.swift in Sources */,
 				1E05F4F523D5374500D9E743 /* InfoView.swift in Sources */,
 				1E92544D23D8C2AD007B0690 /* TeamsListView.swift in Sources */,
+				1EC1A95A23E4801A00CDDCA0 /* TeamView.swift in Sources */,
 				1E664F2A23DE7EC60017F2CC /* ScoreBoardCellView.swift in Sources */,
 				1E05F4C423D40C9200D9E743 /* Document.swift in Sources */,
 				1E664F3423DE8CFB0017F2CC /* Team.swift in Sources */,
