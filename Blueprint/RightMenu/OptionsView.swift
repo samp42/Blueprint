@@ -7,17 +7,24 @@
 //
 
 import SwiftUI
-/*
+
 struct OptionsView: View {
-    @ViewBuilder
+    @EnvironmentObject var global: GlobalEnvironment
     var body: some View {
-        if LeftMenuView.viewSelected == ViewSelected.Teams{
-            TeamsOptionsView()
-        } else if LeftMenuView.viewSelected == ViewSelected.Lists{
-            ListsOptionsView()
-       } else {
-            ScoreBoardOptionsView()
+        VStack{
+            showOptionsMenu(currentView: &global.viewSelected)
         }
+    }
+}
+
+func showOptionsMenu(currentView: inout ViewSelected) -> AnyView {
+    switch currentView{
+    case ViewSelected.ScoreBoard:
+        return AnyView(ScoreBoardOptionsView())
+    case ViewSelected.Lists:
+        return AnyView(ListsOptionsView())
+    default:
+        return AnyView(TeamsOptionsView())
     }
 }
 
@@ -25,4 +32,4 @@ struct OptionsView_Previews: PreviewProvider {
     static var previews: some View {
         OptionsView()
     }
-}*/
+}

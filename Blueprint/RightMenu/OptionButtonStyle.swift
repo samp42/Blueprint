@@ -16,6 +16,6 @@ struct optionButtonStyle: ButtonStyle {
             .foregroundColor(Color.white)
             .cornerRadius(18)
             .font(.headline)
-            .padding(.bottom, 8)
+            .padding(.bottom, 6)
     }
 }

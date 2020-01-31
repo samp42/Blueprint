@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-enum ViewSelected:Int{
-    case ScoreBoard = 0, Teams, Lists
+enum ViewSelected{
+    case ScoreBoard, Teams, Lists
     
     func toString() -> String{
         switch self{
@@ -21,6 +21,7 @@ enum ViewSelected:Int{
             return "Lists"
         }
     }
+    
 }
 
 class GlobalEnvironment: ObservableObject {
@@ -36,7 +37,6 @@ class GlobalEnvironment: ObservableObject {
 struct ContentView: View {
     
     //variables
-    
     @EnvironmentObject var global: GlobalEnvironment
     public var teamSelected: Int? = 3990
     public var gameSelected: String? = "Infinite Recharge: 2020"
@@ -63,7 +63,7 @@ struct ContentView: View {
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
 
             Text("\(global.viewSelected.toString())")
-            
+
             
         }
         

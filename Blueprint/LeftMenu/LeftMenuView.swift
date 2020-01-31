@@ -15,11 +15,11 @@ import SwiftUI
     var viewSelected = ViewSelected.ScoreBoard { didSet { didChange.send()}}
 }*/
 
-
 struct LeftMenuView: View {
     //@ObservedObject var currentView = ViewDisplayed()
     
     @EnvironmentObject var global: GlobalEnvironment
+    let Buttons = [ViewSelected.ScoreBoard, ViewSelected.Teams, ViewSelected.Lists]
 
     var body: some View {
             
