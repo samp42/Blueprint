@@ -19,13 +19,9 @@ enum Position{
     RED1, RED2, RED3, BLUE1, BLUE2, BLUE3
 };
 
-enum DrivePerformance{
-    TERRIBLE, BAD, OK, GOOD, EXCELLENT
+enum Quality: int{
+    TERRIBLE=0, BAD, OK, GOOD, EXCELLENT
 };
-/*
-enum BalancingAbility{
-    NONE, POOR, OK, GOOD, EXCELLENT
-};*/
 
 enum Height{
     

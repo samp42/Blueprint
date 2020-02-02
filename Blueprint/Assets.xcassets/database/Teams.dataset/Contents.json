@@ -6,7 +6,8 @@
   "data" : [
     {
       "idiom" : "universal",
-      "filename" : "teams8.json"
+      "filename" : "Teams.json",
+      "universal-type-identifier" : "public.json"
     }
   ]
 }

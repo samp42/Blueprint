@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+/*
 struct TeamDetailView: View {
     var body: some View {
         VStack{
@@ -32,3 +32,4 @@ struct TeamDetailView_Previews: PreviewProvider {
         TeamDetailView()
     }
 }
+*/

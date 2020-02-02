@@ -30,11 +30,20 @@ struct LeftMenuView: View {
                 self.global.viewSelected = ViewSelected.ScoreBoard
             }){
                 Text("Score Board")
+                    .background(Color.black)
                     .frame(width:180, height:40)
             }.buttonStyle(leftMenuButtonStyle())
-            
+            Button("Teamss") {
+                print("I was clicked")
+            }
+            .buttonStyle(leftMenuButtonStyle())
             Spacer()
                 .frame(height: 10)
+            Button(action: {
+                print("Clicked")
+            }){
+                Text("Bouton")
+            }.frame(width:200, height: 200)
             
             Button(action: {
                 self.global.viewSelected = ViewSelected.Teams

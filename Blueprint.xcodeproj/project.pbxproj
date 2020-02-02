@@ -22,6 +22,7 @@
 		1E0E164723E1247400008F7A /* ListsOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E164623E1247400008F7A /* ListsOptionsView.swift */; };
 		1E0E164923E12E9400008F7A /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E164823E12E9400008F7A /* OptionsView.swift */; };
 		1E184A1B23D7EA32002878A8 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E184A1A23D7EA32002878A8 /* matrix.cpp */; };
+		1E2AD88823E674BF0098EE78 /* TeamsJsonParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2AD88723E674BF0098EE78 /* TeamsJsonParse.swift */; };
 		1E38988523DB8A7700478615 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E38988423DB8A7700478615 /* TeamsView.swift */; };
 		1E5996EA23DFB1B8003F895D /* EventSelectorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5996E923DFB1B8003F895D /* EventSelectorStyle.swift */; };
 		1E664F2A23DE7EC60017F2CC /* ScoreBoardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E664F2923DE7EC60017F2CC /* ScoreBoardCellView.swift */; };
@@ -83,6 +84,7 @@
 		1E0E164823E12E9400008F7A /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		1E184A1923D7EA31002878A8 /* Blueprint-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blueprint-Bridging-Header.h"; sourceTree = "<group>"; };
 		1E184A1A23D7EA32002878A8 /* matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = matrix.cpp; path = Maths/matrix.cpp; sourceTree = "<group>"; };
+		1E2AD88723E674BF0098EE78 /* TeamsJsonParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsJsonParse.swift; sourceTree = "<group>"; };
 		1E38988423DB8A7700478615 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
 		1E5996E923DFB1B8003F895D /* EventSelectorStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSelectorStyle.swift; sourceTree = "<group>"; };
 		1E664F2923DE7EC60017F2CC /* ScoreBoardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScoreBoardCellView.swift; path = Blueprint/ScoreBoard/ScoreBoardCellView.swift; sourceTree = SOURCE_ROOT; };
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				1EBC5ED623E4B1D6002F7450 /* NetworkManager.swift */,
+				1E2AD88723E674BF0098EE78 /* TeamsJsonParse.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				1E0E164923E12E9400008F7A /* OptionsView.swift in Sources */,
 				1ECCCC6F23DA5408008694DF /* MainSectionView.swift in Sources */,
 				1E0E164523E1245F00008F7A /* TeamsOptionsView.swift in Sources */,
+				1E2AD88823E674BF0098EE78 /* TeamsJsonParse.swift in Sources */,
 				1E6D2A4023D9F045004372CE /* LeftMenuView.swift in Sources */,
 				1E184A1B23D7EA32002878A8 /* matrix.cpp in Sources */,
 				1E05F4C223D40C9200D9E743 /* AppDelegate.swift in Sources */,
