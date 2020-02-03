@@ -26,24 +26,17 @@ struct LeftMenuView: View {
         VStack{
             EventSelectorView()
             
-            Button(action: {
-                self.global.viewSelected = ViewSelected.ScoreBoard
-            }){
-                Text("Score Board")
-                    .background(Color.black)
-                    .frame(width:180, height:40)
-            }.buttonStyle(leftMenuButtonStyle())
-            Button("Teamss") {
-                print("I was clicked")
+            GeometryReader{geometry in
+                Button(action: {
+                    self.global.viewSelected = ViewSelected.ScoreBoard
+                }){
+                    Text("Score Board")
+                        .frame(width:180, height:40)
+                }.buttonStyle(leftMenuButtonStyle()).contentShape(RoundedRectangle(cornerRadius: 20))
             }
-            .buttonStyle(leftMenuButtonStyle())
+
             Spacer()
                 .frame(height: 10)
-            Button(action: {
-                print("Clicked")
-            }){
-                Text("Bouton")
-            }.frame(width:200, height: 200)
             
             Button(action: {
                 self.global.viewSelected = ViewSelected.Teams
