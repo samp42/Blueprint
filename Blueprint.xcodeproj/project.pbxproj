@@ -16,7 +16,6 @@
 		1E05F4DA23D40C9400D9E743 /* BlueprintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05F4D923D40C9400D9E743 /* BlueprintTests.swift */; };
 		1E05F4E523D40C9400D9E743 /* BlueprintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05F4E423D40C9400D9E743 /* BlueprintUITests.swift */; };
 		1E05F4F523D5374500D9E743 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05F4F423D5374500D9E743 /* InfoView.swift */; };
-		1E184A1B23D7EA32002878A8 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E184A1A23D7EA32002878A8 /* matrix.cpp */; };
 		1E6D2A3E23D9F027004372CE /* RightMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D2A3D23D9F027004372CE /* RightMenuView.swift */; };
 		1E6D2A4023D9F045004372CE /* LeftMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D2A3F23D9F045004372CE /* LeftMenuView.swift */; };
 		1E92544B23D8C1DF007B0690 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92544A23D8C1DF007B0690 /* ScoreBoardView.swift */; };
@@ -60,7 +59,6 @@
 		1E05F4E623D40C9400D9E743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E05F4F423D5374500D9E743 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		1E184A1923D7EA31002878A8 /* Blueprint-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blueprint-Bridging-Header.h"; sourceTree = "<group>"; };
-		1E184A1A23D7EA32002878A8 /* matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = matrix.cpp; path = Maths/matrix.cpp; sourceTree = "<group>"; };
 		1E6D2A3D23D9F027004372CE /* RightMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuView.swift; sourceTree = "<group>"; };
 		1E6D2A3F23D9F045004372CE /* LeftMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuView.swift; sourceTree = "<group>"; };
 		1E92544A23D8C1DF007B0690 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				1E05F4F423D5374500D9E743 /* InfoView.swift */,
 				1E92544A23D8C1DF007B0690 /* ScoreBoardView.swift */,
 				1E92544C23D8C2AD007B0690 /* TeamsListView.swift */,
-				1E184A1A23D7EA32002878A8 /* matrix.cpp */,
 				1E05F4C123D40C9200D9E743 /* AppDelegate.swift */,
 				1E05F4C323D40C9200D9E743 /* Document.swift */,
 				1E05F4C523D40C9200D9E743 /* ContentView.swift */,
@@ -302,7 +299,6 @@
 				1E05F4C423D40C9200D9E743 /* Document.swift in Sources */,
 				1ECCCC6F23DA5408008694DF /* MainSectionView.swift in Sources */,
 				1E6D2A4023D9F045004372CE /* LeftMenuView.swift in Sources */,
-				1E184A1B23D7EA32002878A8 /* matrix.cpp in Sources */,
 				1E05F4C223D40C9200D9E743 /* AppDelegate.swift in Sources */,
 				1E92544B23D8C1DF007B0690 /* ScoreBoardView.swift in Sources */,
 				1E05F4C623D40C9200D9E743 /* ContentView.swift in Sources */,
