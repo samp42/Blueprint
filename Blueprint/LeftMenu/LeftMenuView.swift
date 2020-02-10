@@ -26,14 +26,25 @@ struct LeftMenuView: View {
         VStack{
             EventSelectorView()
             
-            GeometryReader{geometry in
-                Button(action: {
-                    self.global.viewSelected = ViewSelected.ScoreBoard
-                }){
-                    Text("Score Board")
-                        .frame(width:180, height:40)
-                }.buttonStyle(leftMenuButtonStyle()).contentShape(RoundedRectangle(cornerRadius: 20))
-            }
+            Button(action: {
+                self.global.viewSelected =  ViewSelected.ScoreBoard
+            }){
+                Text("Score Board")
+                    .frame(width:180, height:40)
+            }.buttonStyle(leftMenuButtonStyle())
+            /*if(self.global.viewSelected == ViewSelected.ScoreBoard){
+                .background(Color.white)
+            }*/
+
+            Spacer()
+                .frame(height: 10)
+            
+            Button(action: {
+                self.global.viewSelected =  ViewSelected.Ranking
+            }){
+                Text("Ranking")
+                    .frame(width:180, height:40)
+            }.buttonStyle(leftMenuButtonStyle())
 
             Spacer()
                 .frame(height: 10)
@@ -55,7 +66,16 @@ struct LeftMenuView: View {
                     .frame(width:180, height:40)
             }.buttonStyle(leftMenuButtonStyle())
             
-        }.padding(.horizontal, 20)
+            Spacer()
+            .frame(height: 10)
+            
+            Button(action: {
+                self.global.viewSelected = ViewSelected.Scouters
+            }){
+                Text("Scouters")
+                    .frame(width:180, height:40)
+            }.buttonStyle(leftMenuButtonStyle())
+        }.padding(20)
     }
 }
 

@@ -9,16 +9,20 @@
 import SwiftUI
 
 enum ViewSelected{
-    case ScoreBoard, Teams, Lists
+    case ScoreBoard, Ranking, Teams, Lists, Scouters
     
     func toString() -> String{
         switch self{
         case .ScoreBoard:
             return "Score Board"
+        case .Ranking:
+            return "Ranking"
         case .Teams:
             return "Teams"
         case .Lists:
             return "Lists"
+        case .Scouters:
+            return "Scouters"
         }
     }
     

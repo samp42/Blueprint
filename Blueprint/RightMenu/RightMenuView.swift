@@ -15,7 +15,7 @@ struct RightMenuView: View {
             ScoreBoardOptionsView()
             Spacer()
             InfoView()
-        }.background(Color.white)
+        }
     }
 }
 

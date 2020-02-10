@@ -31,10 +31,10 @@ struct InfoView: View {
                         .font(.caption)
                 }
                 
-            }.frame(width: 220, height: 100, alignment: .center)
+            }.frame(width: 220, height: 80, alignment: .center)
                 .background(Color("LightGray"))
                 .foregroundColor(Color.black)
-        .cornerRadius(25)
+        .cornerRadius(20)
         .padding(10)
     }
 }
