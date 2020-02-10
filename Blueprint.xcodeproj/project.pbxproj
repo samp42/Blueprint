@@ -64,6 +64,7 @@
 		1E92544A23D8C1DF007B0690 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
 		1E92544C23D8C2AD007B0690 /* TeamsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsListView.swift; sourceTree = "<group>"; };
 		1E95D2DB23DA3C95000F4A8A /* EventSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSelectorView.swift; sourceTree = "<group>"; };
+		1E9909F623F1B9B60051A50D /* Maths */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Maths; path = /Users/samuelproulx/Documents/GitHub/Blueprint/Blueprint/Maths; sourceTree = "<absolute>"; };
 		1ECCCC6E23DA5408008694DF /* MainSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +116,7 @@
 		1E05F4C023D40C9200D9E743 /* Blueprint */ = {
 			isa = PBXGroup;
 			children = (
+				1E9909F623F1B9B60051A50D /* Maths */,
 				1E95D2DB23DA3C95000F4A8A /* EventSelectorView.swift */,
 				1E6D2A3F23D9F045004372CE /* LeftMenuView.swift */,
 				1E6D2A3D23D9F027004372CE /* RightMenuView.swift */,

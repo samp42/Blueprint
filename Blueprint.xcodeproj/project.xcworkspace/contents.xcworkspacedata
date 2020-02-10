@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Blueprint.xcodeproj">
+      location = "group:/Users/samuelproulx/Documents/GitHub/Blueprint/Blueprint/Maths">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
