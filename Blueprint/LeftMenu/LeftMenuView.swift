@@ -26,55 +26,70 @@ struct LeftMenuView: View {
         VStack{
             EventSelectorView()
             
-            Button(action: {
-                self.global.viewSelected =  ViewSelected.ScoreBoard
-            }){
-                Text("Score Board")
-                    .frame(width:180, height:40)
-            }.buttonStyle(leftMenuButtonStyle())
-            /*if(self.global.viewSelected == ViewSelected.ScoreBoard){
-                .background(Color.white)
-            }*/
-
+            GeometryReader{ geometry in
+                Button(action: {
+                    self.global.viewSelected =  ViewSelected.ScoreBoard
+                }){
+                    HStack{
+                        Image("doc.on.clipboard.fill")
+                        Text("Score Board")
+                    }
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                    }.buttonStyle(leftMenuButtonStyle())
+                .frame(width: geometry.size.width, height: geometry.size.height)
+                    
+            }.frame(width: 180, height: 40)
+            
             Spacer()
                 .frame(height: 10)
-            
+                
             Button(action: {
                 self.global.viewSelected =  ViewSelected.Ranking
+                
             }){
-                Text("Ranking")
-                    .frame(width:180, height:40)
+                HStack{
+                    Image("tray.full.fill")
+                    Text("Ranking")
+                }
+        
             }.buttonStyle(leftMenuButtonStyle())
 
-            Spacer()
+                Spacer()
+                    .frame(height: 10)
+                
+                Button(action: {
+                    self.global.viewSelected = ViewSelected.Teams
+                }){
+                    HStack{
+                        Image("person.3.fill")
+                        Text("Teams")
+                    }
+                }.buttonStyle(leftMenuButtonStyle())
+                
+                Spacer()
                 .frame(height: 10)
+                
+                Button(action: {
+                    self.global.viewSelected = ViewSelected.Lists
+                }){
+                    HStack{
+                        Image("doc.text.fill")
+                        Text("Lists")
+                    }
+                }.buttonStyle(leftMenuButtonStyle())
+                
+                Spacer()
+                .frame(height: 10)
+                
+                Button(action: {
+                    self.global.viewSelected = ViewSelected.Scouters
+                }){
+                    HStack{
+                        Image("system.person.fill")
+                        Text("Scouters")
+                    }
+                }.buttonStyle(leftMenuButtonStyle())
             
-            Button(action: {
-                self.global.viewSelected = ViewSelected.Teams
-            }){
-                Text("Teams")
-                    .frame(width:180, height:40)
-            }.buttonStyle(leftMenuButtonStyle())
-            
-            Spacer()
-            .frame(height: 10)
-            
-            Button(action: {
-                self.global.viewSelected = ViewSelected.Lists
-            }){
-                Text("Lists")
-                    .frame(width:180, height:40)
-            }.buttonStyle(leftMenuButtonStyle())
-            
-            Spacer()
-            .frame(height: 10)
-            
-            Button(action: {
-                self.global.viewSelected = ViewSelected.Scouters
-            }){
-                Text("Scouters")
-                    .frame(width:180, height:40)
-            }.buttonStyle(leftMenuButtonStyle())
         }.padding(20)
     }
 }
