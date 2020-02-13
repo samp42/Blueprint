@@ -131,8 +131,6 @@ private:
     //INVERSE METHODS
     //inverse (requires the matrix to be a square matrix)
     
-    //FUCK MEEEEE
-    
     //method to make array of matches played
     
 };
