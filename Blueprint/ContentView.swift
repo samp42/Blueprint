@@ -65,14 +65,25 @@ struct ContentView: View {
                     RightMenuView()
                 }.frame(width: 240)
             }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
-
-            Text("\(global.viewSelected.toString())")
-
-            
+                
+            displayView()
+                .position(x: 660, y: 64)
         }
         
     }
+    
+    func displayView() -> AnyView{
+        switch self.global.viewSelected{
+        case ViewSelected.ScoreBoard:
+            return AnyView(ScoreBoardView())
+        case ViewSelected.Teams:
+            return AnyView(TeamsView())
+        default:
+            return AnyView(Text("\(global.viewSelected.toString())"))
+        }
+    }
 }
+
 
 
 struct ContentView_Previews: PreviewProvider {

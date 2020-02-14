@@ -15,41 +15,48 @@ struct TeamsOrderModeView: View {
     var body: some View {
         HStack{
             HStack{
+                Text("Order by: ")
+                    //.padding([.horizontal]: 20)
+                
                 Button(action: {
                     self.orderMode = "Team Number"
                 }){
                     Text("Team number")
                         .frame(width: 130.0)
                 }
+                
+                Spacer()
+                    .frame(width: 10)
+
                 Button(action: {
                     self.orderMode = "Seed"
                 }){
                     Text("Seed")
                     .frame(width: 130.0)
                 }
+                
+                Spacer()
+                .frame(width: 10)
+                
                 Button(action: {
-                    self.orderMode = "OPR"
+                    self.orderMode = "Best OPR"
                 }){
                     Text("OPR")
                     .frame(width: 130.0)
                 }
+                
+                Spacer()
+                .frame(width: 10)
+                
                 Button(action: {
-                    self.orderMode = "DPR"
+                    self.orderMode = "Best DPR"
                 }){
                     Text("DPR")
                     .frame(width: 130.0)
-                    /*if orderMode=="DPR"{
-                        Text("DPR")
-                        .frame(width: 130.0)
-                        .background(.white)
-                    } else {
-                        Text("DPR")
-                        .frame(width: 130.0)
-                    }*/
                 }
             }
             
-        }
+        }.padding(30)
         
         
     }
