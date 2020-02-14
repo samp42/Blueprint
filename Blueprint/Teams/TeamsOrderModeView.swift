@@ -15,9 +15,6 @@ struct TeamsOrderModeView: View {
     var body: some View {
         HStack{
             HStack{
-                Text("Order by: ")
-                    //.padding([.horizontal]: 20)
-                
                 Button(action: {
                     self.orderMode = "Team Number"
                 }){
@@ -57,7 +54,6 @@ struct TeamsOrderModeView: View {
             }
             
         }.padding(30)
-        
         
     }
 }

@@ -17,6 +17,8 @@ struct TeamsView: View {
             .padding(10.0)
             
             HStack{
+                Spacer()
+                    .frame(width: 20)
                 Text("Order teams by: ")
                 TeamsOrderModeView()
             }.background(Color("DarkBlue"))
