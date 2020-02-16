@@ -40,6 +40,9 @@
 		1EC1A95A23E4801A00CDDCA0 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1A95923E4801A00CDDCA0 /* TeamView.swift */; };
 		1EC1A95C23E4805600CDDCA0 /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1A95B23E4805600CDDCA0 /* TeamDetailView.swift */; };
 		1ECCCC6F23DA5408008694DF /* MainSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECCCC6E23DA5408008694DF /* MainSectionView.swift */; };
+		1EE98DE323F8D7CB00854EF4 /* ScoutersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE98DE223F8D7CB00854EF4 /* ScoutersView.swift */; };
+		1EE98DE523F8D7DF00854EF4 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE98DE423F8D7DF00854EF4 /* ListsView.swift */; };
+		1EE98DE823F8D91800854EF4 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE98DE723F8D91800854EF4 /* RankingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,9 @@
 		1EC1A95923E4801A00CDDCA0 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		1EC1A95B23E4805600CDDCA0 /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
 		1ECCCC6E23DA5408008694DF /* MainSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionView.swift; sourceTree = "<group>"; };
+		1EE98DE223F8D7CB00854EF4 /* ScoutersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutersView.swift; sourceTree = "<group>"; };
+		1EE98DE423F8D7DF00854EF4 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
+		1EE98DE723F8D91800854EF4 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,8 @@
 				1E47713123DB52CB0018E2D4 /* ScoreBoard */,
 				1E47713223DB52D50018E2D4 /* Teams */,
 				1E47713323DB52E10018E2D4 /* Lists */,
+				1EE98DE123F8D77700854EF4 /* Scouters */,
+				1EE98DE623F8D8F300854EF4 /* Rankings */,
 				1E184A1A23D7EA32002878A8 /* matrix.cpp */,
 				1E05F4C123D40C9200D9E743 /* AppDelegate.swift */,
 				1E05F4C323D40C9200D9E743 /* Document.swift */,
@@ -258,6 +266,7 @@
 		1E47713323DB52E10018E2D4 /* Lists */ = {
 			isa = PBXGroup;
 			children = (
+				1EE98DE423F8D7DF00854EF4 /* ListsView.swift */,
 			);
 			path = Lists;
 			sourceTree = "<group>";
@@ -269,6 +278,22 @@
 				1E2AD88723E674BF0098EE78 /* TeamsJsonParse.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		1EE98DE123F8D77700854EF4 /* Scouters */ = {
+			isa = PBXGroup;
+			children = (
+				1EE98DE223F8D7CB00854EF4 /* ScoutersView.swift */,
+			);
+			path = Scouters;
+			sourceTree = "<group>";
+		};
+		1EE98DE623F8D8F300854EF4 /* Rankings */ = {
+			isa = PBXGroup;
+			children = (
+				1EE98DE723F8D91800854EF4 /* RankingView.swift */,
+			);
+			path = Rankings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +436,7 @@
 				1E92544D23D8C2AD007B0690 /* TeamsListView.swift in Sources */,
 				1EC1A95A23E4801A00CDDCA0 /* TeamView.swift in Sources */,
 				1E664F2A23DE7EC60017F2CC /* ScoreBoardCellView.swift in Sources */,
+				1EE98DE323F8D7CB00854EF4 /* ScoutersView.swift in Sources */,
 				1E05F4C423D40C9200D9E743 /* Document.swift in Sources */,
 				1E0E164923E12E9400008F7A /* OptionsView.swift in Sources */,
 				1ECCCC6F23DA5408008694DF /* MainSectionView.swift in Sources */,
@@ -418,12 +444,14 @@
 				1E2AD88823E674BF0098EE78 /* TeamsJsonParse.swift in Sources */,
 				1E6D2A4023D9F045004372CE /* LeftMenuView.swift in Sources */,
 				1E184A1B23D7EA32002878A8 /* matrix.cpp in Sources */,
+				1EE98DE523F8D7DF00854EF4 /* ListsView.swift in Sources */,
 				1E05F4C223D40C9200D9E743 /* AppDelegate.swift in Sources */,
 				1E92544B23D8C1DF007B0690 /* ScoreBoardView.swift in Sources */,
 				1E0E164123E0DA7900008F7A /* OptionButtonStyle.swift in Sources */,
 				1E5996EA23DFB1B8003F895D /* EventSelectorStyle.swift in Sources */,
 				1E8BBCCC23DCB02900BA06C1 /* ActionsView.swift in Sources */,
 				1E38988523DB8A7700478615 /* TeamsView.swift in Sources */,
+				1EE98DE823F8D91800854EF4 /* RankingView.swift in Sources */,
 				1E919B1423DB7D1C00714CD9 /* TeamsOrderModeView.swift in Sources */,
 				1E0E164723E1247400008F7A /* ListsOptionsView.swift in Sources */,
 				1E0E164323E1245200008F7A /* ScoreBoardOptionsView.swift in Sources */,

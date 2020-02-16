@@ -32,6 +32,7 @@ class GlobalEnvironment: ObservableObject {
     
     //@Published var eventSelected? = nil
     @Published var viewSelected = ViewSelected.Teams
+    @Published var eventSelected = "None"
     
     /*func getSelectedView(viewToShow: ViewSelected)->Void{
         viewSelected = ViewSelected.viewToShow
@@ -73,14 +74,30 @@ struct ContentView: View {
     }
     
     func displayView() -> AnyView{
-        switch self.global.viewSelected{
-        case ViewSelected.ScoreBoard:
-            return AnyView(ScoreBoardView())
-        case ViewSelected.Teams:
-            return AnyView(TeamsView())
-        default:
-            return AnyView(Text("\(global.viewSelected.toString())"))
+        //check that event is selected
+        if self.global.eventSelected != "None"{
+            switch self.global.viewSelected{
+            case ViewSelected.ScoreBoard:
+                return AnyView(ScoreBoardView())
+            case ViewSelected.Teams:
+                return AnyView(TeamsView())
+            case ViewSelected.Lists:
+                return AnyView(ListsView())
+            case ViewSelected.Scouters:
+                return AnyView(ScoutersView())
+            case ViewSelected.Ranking:
+                return AnyView(RankingView())
+            }
+            
+        } else {
+            return AnyView(VStack{
+                Spacer()
+                Text("No Event Selected.")
+                    .font(.headline)
+                Spacer()
+                })
         }
+        
     }
 }
 

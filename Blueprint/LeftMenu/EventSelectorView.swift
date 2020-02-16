@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct EventSelectorView: View {
+    @EnvironmentObject var global: GlobalEnvironment
     @State public var selectedEvent: String?
     
     var body: some View {
@@ -44,19 +45,22 @@ struct EventSelectorView: View {
             }*/
         }) {
             Button(action: {
-                self.selectedEvent = ""
+                self.selectedEvent = "None"
+                self.global.eventSelected = "None"
             }) {
                 Text("Event")
             }
             
             Button(action: {
                 self.selectedEvent = "Sherbrooke"
+                self.global.eventSelected = "Sherbrooke"
             }) {
                 Text("Sherbrooke")
             }
             
             Button(action: {
                 self.selectedEvent = "Montreal"
+                self.global.eventSelected = "Montreal"
             }) {
                 Text("Montreal")
             }
