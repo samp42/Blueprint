@@ -15,7 +15,8 @@ struct optionButtonStyle: ButtonStyle {
             .background(Color("RightButtonUnselected"))
             .foregroundColor(Color.white)
             .cornerRadius(18)
-            .font(.headline)
+            .font(.subheadline)
             .padding(.bottom, 6)
+            .frame(width: 220, height: 36)
     }
 }

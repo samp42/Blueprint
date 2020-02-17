@@ -22,6 +22,7 @@
 		1E0E164723E1247400008F7A /* ListsOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E164623E1247400008F7A /* ListsOptionsView.swift */; };
 		1E0E164923E12E9400008F7A /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E164823E12E9400008F7A /* OptionsView.swift */; };
 		1E184A1B23D7EA32002878A8 /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E184A1A23D7EA32002878A8 /* matrix.cpp */; };
+		1E27424623FA0B1800C72289 /* ScoutersOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E27424523FA0B1800C72289 /* ScoutersOptionsView.swift */; };
 		1E2AD88823E674BF0098EE78 /* TeamsJsonParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2AD88723E674BF0098EE78 /* TeamsJsonParse.swift */; };
 		1E38988523DB8A7700478615 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E38988423DB8A7700478615 /* TeamsView.swift */; };
 		1E5996EA23DFB1B8003F895D /* EventSelectorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5996E923DFB1B8003F895D /* EventSelectorStyle.swift */; };
@@ -31,6 +32,7 @@
 		1E6D2A3E23D9F027004372CE /* RightMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D2A3D23D9F027004372CE /* RightMenuView.swift */; };
 		1E6D2A4023D9F045004372CE /* LeftMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D2A3F23D9F045004372CE /* LeftMenuView.swift */; };
 		1E762FD423DD28B500958B12 /* LeftMenuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E762FD323DD28B500958B12 /* LeftMenuButtonStyle.swift */; };
+		1E7B999623F90E55004F2D2C /* RankingOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B999523F90E55004F2D2C /* RankingOptionsView.swift */; };
 		1E8BBCCC23DCB02900BA06C1 /* ActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8BBCCB23DCB02900BA06C1 /* ActionsView.swift */; };
 		1E919B1423DB7D1C00714CD9 /* TeamsOrderModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E919B1323DB7D1C00714CD9 /* TeamsOrderModeView.swift */; };
 		1E92544B23D8C1DF007B0690 /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E92544A23D8C1DF007B0690 /* ScoreBoardView.swift */; };
@@ -86,6 +88,7 @@
 		1E0E164823E12E9400008F7A /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		1E184A1923D7EA31002878A8 /* Blueprint-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blueprint-Bridging-Header.h"; sourceTree = "<group>"; };
 		1E184A1A23D7EA32002878A8 /* matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = matrix.cpp; path = Maths/matrix.cpp; sourceTree = "<group>"; };
+		1E27424523FA0B1800C72289 /* ScoutersOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutersOptionsView.swift; sourceTree = "<group>"; };
 		1E2AD88723E674BF0098EE78 /* TeamsJsonParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsJsonParse.swift; sourceTree = "<group>"; };
 		1E38988423DB8A7700478615 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
 		1E5996E923DFB1B8003F895D /* EventSelectorStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSelectorStyle.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		1E6D2A3D23D9F027004372CE /* RightMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuView.swift; sourceTree = "<group>"; };
 		1E6D2A3F23D9F045004372CE /* LeftMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuView.swift; sourceTree = "<group>"; };
 		1E762FD323DD28B500958B12 /* LeftMenuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuButtonStyle.swift; sourceTree = "<group>"; };
+		1E7B999523F90E55004F2D2C /* RankingOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingOptionsView.swift; sourceTree = "<group>"; };
 		1E8BBCCB23DCB02900BA06C1 /* ActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsView.swift; sourceTree = "<group>"; };
 		1E919B1323DB7D1C00714CD9 /* TeamsOrderModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsOrderModeView.swift; sourceTree = "<group>"; };
 		1E92544A23D8C1DF007B0690 /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
@@ -229,9 +233,11 @@
 			isa = PBXGroup;
 			children = (
 				1E6D2A3D23D9F027004372CE /* RightMenuView.swift */,
+				1E27424523FA0B1800C72289 /* ScoutersOptionsView.swift */,
 				1E0E164823E12E9400008F7A /* OptionsView.swift */,
 				1E0E164223E1245200008F7A /* ScoreBoardOptionsView.swift */,
 				1E0E164423E1245F00008F7A /* TeamsOptionsView.swift */,
+				1E7B999523F90E55004F2D2C /* RankingOptionsView.swift */,
 				1E0E164623E1247400008F7A /* ListsOptionsView.swift */,
 				1E0E164023E0DA7900008F7A /* OptionButtonStyle.swift */,
 				1E05F4F423D5374500D9E743 /* InfoView.swift */,
@@ -432,7 +438,9 @@
 				1E664F2E23DE8BB80017F2CC /* TeamCellView.swift in Sources */,
 				1E762FD423DD28B500958B12 /* LeftMenuButtonStyle.swift in Sources */,
 				1EC1A95C23E4805600CDDCA0 /* TeamDetailView.swift in Sources */,
+				1E7B999623F90E55004F2D2C /* RankingOptionsView.swift in Sources */,
 				1E05F4F523D5374500D9E743 /* InfoView.swift in Sources */,
+				1E27424623FA0B1800C72289 /* ScoutersOptionsView.swift in Sources */,
 				1E92544D23D8C2AD007B0690 /* TeamsListView.swift in Sources */,
 				1EC1A95A23E4801A00CDDCA0 /* TeamView.swift in Sources */,
 				1E664F2A23DE7EC60017F2CC /* ScoreBoardCellView.swift in Sources */,

@@ -12,21 +12,28 @@ struct OptionsView: View {
     @EnvironmentObject var global: GlobalEnvironment
     var body: some View {
         VStack{
-            showOptionsMenu(currentView: &global.viewSelected)
+            displayOptionsView()
         }
     }
+    
+    func displayOptionsView() -> AnyView{
+        switch self.global.viewSelected{
+        case ViewSelected.ScoreBoard:
+            return AnyView(ScoreBoardOptionsView())
+        case ViewSelected.Teams:
+            return AnyView(TeamsOptionsView())
+        case ViewSelected.Ranking:
+            return AnyView(RankingOptionsView())
+        case ViewSelected.Lists:
+            return AnyView(ListsOptionsView())
+        case ViewSelected.Scouters:
+            return AnyView(ScoutersOptionsView())
+        }
+    }
+    
 }
 
-func showOptionsMenu(currentView: inout ViewSelected) -> AnyView {
-    switch currentView{
-    case ViewSelected.ScoreBoard:
-        return AnyView(ScoreBoardOptionsView())
-    case ViewSelected.Lists:
-        return AnyView(ListsOptionsView())
-    default:
-        return AnyView(TeamsOptionsView())
-    }
-}
+
 
 struct OptionsView_Previews: PreviewProvider {
     static var previews: some View {

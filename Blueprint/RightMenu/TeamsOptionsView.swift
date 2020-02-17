@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct TeamsOptionsView: View {
+    
+    let options = ["Teams","Pit Scouting","Match Scouting", "Statistics"]
+    
     var body: some View {
         VStack{
             Button(action: {

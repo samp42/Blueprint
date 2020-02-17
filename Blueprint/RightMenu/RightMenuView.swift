@@ -9,10 +9,13 @@
 import SwiftUI
 
 struct RightMenuView: View {
+    
+    @EnvironmentObject var global: GlobalEnvironment
+    
     var body: some View {
         VStack{
             ActionsView()
-            ScoreBoardOptionsView()
+            OptionsView()
             Spacer()
             InfoView()
         }

@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ListsOptionsView: View {
+    
+    let options = ["Pickers List","First Picklist", "Second Picklist", "Blacklist"]
+    
     var body: some View {
         VStack{
             Button(action: {

@@ -9,7 +9,8 @@
 import SwiftUI
 
 struct ScoreBoardOptionsView: View {
-    //let spacerHeight: CGFloat = 8
+    
+    let options = ["Score Table", "Match Schedule"]
     
     var body: some View {
         VStack{

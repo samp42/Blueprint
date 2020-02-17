@@ -30,10 +30,8 @@ enum ViewSelected{
 
 class GlobalEnvironment: ObservableObject {
     
-    //@Published var eventSelected? = nil
-    @Published var viewSelected = ViewSelected.Teams
     @Published var eventSelected = "None"
-    
+    @Published var viewSelected = ViewSelected.Teams
     /*func getSelectedView(viewToShow: ViewSelected)->Void{
         viewSelected = ViewSelected.viewToShow
     }*/
