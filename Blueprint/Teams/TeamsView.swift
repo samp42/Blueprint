@@ -9,12 +9,20 @@
 import SwiftUI
 
 struct TeamsView: View {
+    
+    @State private var searchInput: String?
+    
     var body: some View {
         VStack(alignment: .leading){
-            Text("Teams")
-            .font(.largeTitle)
-            .fontWeight(.heavy)
-            .padding(10.0)
+            HStack{
+                Text("Teams")
+                .font(.largeTitle)
+                .fontWeight(.heavy)
+                .padding(10.0)
+                
+                //TextField("Search", text: $searchInput)
+                //.textFieldStyle
+            }
             
             HStack{
                 Spacer()

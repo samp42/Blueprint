@@ -12,11 +12,11 @@ struct optionButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         
         configuration.label
-            .background(Color("RightButtonUnselected"))
             .foregroundColor(Color.white)
+            .background(Color.red)
             .cornerRadius(18)
             .font(.subheadline)
             .padding(.bottom, 6)
-            .frame(width: 220, height: 36)
+            
     }
 }

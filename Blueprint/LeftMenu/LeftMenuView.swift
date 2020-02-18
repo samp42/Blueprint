@@ -18,77 +18,27 @@ import SwiftUI
 struct LeftMenuView: View {
     
     @EnvironmentObject var global: GlobalEnvironment
-    //to do: make buttons from the list below for cleaner and shorter code
-    //let Buttons = [ViewSelected.ScoreBoard, ViewSelected.Teams, ViewSelected.Lists]
+    let views = ["Score Board", "Ranking", "Teams", "Lists", "Scouters"]
 
     var body: some View {
             
         VStack{
             EventSelectorView()
             
-            Button(action: {
-                self.global.viewSelected =  ViewSelected.ScoreBoard
-            }){
-                HStack{
-                    //Image("doc.on.clipboard.fill")
-                    Text("Score Board")
-                }
-                    .frame(width: 180, height: 40)
-            }.buttonStyle(leftMenuButtonStyle())
-                .frame(width: 180, height: 40)
-            
-            Spacer()
-                .frame(height: 10)
-                
-            Button(action: {
-                self.global.viewSelected =  ViewSelected.Ranking
-                
-            }){
-                HStack{
-                    //Image("tray.full.fill")
-                    Text("Ranking")
-                }.frame(width: 180, height: 40)
-        
-            }.buttonStyle(leftMenuButtonStyle())
-
-                Spacer()
-                    .frame(height: 10)
-                
-                Button(action: {
-                    self.global.viewSelected = ViewSelected.Teams
+            ForEach(0..<views.count){ item in
+                Button(action:{
+                    //to change
+                    self.global.viewSelected = ViewSelected(rawValue: item)!
                 }){
-                    HStack{
-                        //Image("person.3.fill")
-                        Text("Teams")
-                    }.frame(width: 180, height: 40)
-                    
-                }.buttonStyle(leftMenuButtonStyle())
+                    Text(self.views[item])
+                        .frame(width: 180, height: 40)
+                }.background(self.views[item] == ViewSelected.toString(self.global.viewSelected)() ? Color(white: 1, opacity: 1) : Color("DarkBlue"))
+                    .cornerRadius(22)
+                    .buttonStyle(leftMenuButtonStyle())
                 
                 Spacer()
                     .frame(height: 10)
-                
-                Button(action: {
-                    self.global.viewSelected = ViewSelected.Lists
-                }){
-                    HStack{
-                        //Image("doc.text.fill")
-                        Text("Lists")
-                    }.frame(width: 180, height: 40)
-                    
-                }.buttonStyle(leftMenuButtonStyle())
-                
-                Spacer()
-                    .frame(height: 10)
-                
-                Button(action: {
-                    self.global.viewSelected = ViewSelected.Scouters
-                }){
-                    HStack{
-                        //Image("person.fill")
-                        Text("Scouters")
-                    }.frame(width: 180, height: 40)
-                    
-                }.buttonStyle(leftMenuButtonStyle())
+            }
             
         }.padding(20)
     }

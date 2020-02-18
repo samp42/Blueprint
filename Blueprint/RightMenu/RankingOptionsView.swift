@@ -18,6 +18,7 @@ struct RankingOptionsView: View {
                 print("hello")
             }){
                 Text(self.options[item])
+                .frame(width: 220, height: 36)
             }.buttonStyle(optionButtonStyle())
         }
     }

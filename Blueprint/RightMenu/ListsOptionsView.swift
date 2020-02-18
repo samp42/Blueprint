@@ -14,29 +14,17 @@ struct ListsOptionsView: View {
     
     var body: some View {
         VStack{
-            Button(action: {
-                
-            }){
-                Text("1st Robot Picklist")
-                    .fontWeight(.semibold)
-                .frame(width: 220, height: 36)
-            }.buttonStyle(optionButtonStyle())
             
-            Button(action: {
-                
-            }){
-                Text("2nd Robot Picklist")
-                    .fontWeight(.semibold)
-                .frame(width: 220, height: 36)
-            }.buttonStyle(optionButtonStyle())
+            ForEach(0..<options.count){item in
+                Button(action: {
+                    
+                }){
+                    Text(self.options[item])
+                        .fontWeight(.semibold)
+                    .frame(width: 220, height: 36)
+                }.buttonStyle(optionButtonStyle())
+            }
             
-            Button(action: {
-                
-            }){
-                Text("Blacklist")
-                    .fontWeight(.semibold)
-                .frame(width: 220, height: 36)
-            }.buttonStyle(optionButtonStyle())
         }
     }
 }

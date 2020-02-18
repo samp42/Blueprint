@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-enum ViewSelected{
-    case ScoreBoard, Ranking, Teams, Lists, Scouters
+enum ViewSelected: Int{
+    case ScoreBoard=0, Ranking, Teams, Lists, Scouters
     
     func toString() -> String{
         switch self{
@@ -46,9 +46,10 @@ struct ContentView: View {
     
     var body: some View {
         //main divisions
-        ZStack{
+        ZStack(alignment: .top){
             MainSectionView()
-            .frame(minWidth: 600, maxWidth: .infinity)
+            .frame(minWidth: 400, maxWidth: .infinity)
+            
             HStack{
                 VStack{
                     LeftMenuView()
@@ -58,15 +59,15 @@ struct ContentView: View {
                 .frame(minWidth: 200, maxWidth: 200, minHeight: 0, maxHeight: .infinity, alignment: .leading)
                 
                 Spacer()
-                    .frame(minWidth: 810.0)
+                    .frame(minWidth: (768-200-240))
                 
                 VStack{
                     RightMenuView()
                 }.frame(width: 240)
-            }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
+            }.frame(minWidth: 768, maxWidth: .infinity, minHeight: 500, maxHeight: .infinity, alignment: .top)
                 
             displayView()
-                .position(x: 660, y: 64)
+                //.position(x: 480, y: 64)
         }
         
     }

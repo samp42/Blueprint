@@ -15,9 +15,11 @@ struct RightMenuView: View {
     var body: some View {
         VStack{
             ActionsView()
-            OptionsView()
-            Spacer()
-            InfoView()
+            VStack{
+                OptionsView()
+                Spacer()
+                InfoView()
+            }
         }
     }
 }

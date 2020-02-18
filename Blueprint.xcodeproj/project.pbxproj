@@ -233,15 +233,15 @@
 			isa = PBXGroup;
 			children = (
 				1E6D2A3D23D9F027004372CE /* RightMenuView.swift */,
-				1E27424523FA0B1800C72289 /* ScoutersOptionsView.swift */,
 				1E0E164823E12E9400008F7A /* OptionsView.swift */,
+				1E05F4F423D5374500D9E743 /* InfoView.swift */,
+				1E8BBCCB23DCB02900BA06C1 /* ActionsView.swift */,
+				1E27424523FA0B1800C72289 /* ScoutersOptionsView.swift */,
 				1E0E164223E1245200008F7A /* ScoreBoardOptionsView.swift */,
 				1E0E164423E1245F00008F7A /* TeamsOptionsView.swift */,
 				1E7B999523F90E55004F2D2C /* RankingOptionsView.swift */,
 				1E0E164623E1247400008F7A /* ListsOptionsView.swift */,
 				1E0E164023E0DA7900008F7A /* OptionButtonStyle.swift */,
-				1E05F4F423D5374500D9E743 /* InfoView.swift */,
-				1E8BBCCB23DCB02900BA06C1 /* ActionsView.swift */,
 			);
 			path = RightMenu;
 			sourceTree = "<group>";

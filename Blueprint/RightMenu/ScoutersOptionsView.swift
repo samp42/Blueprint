@@ -9,8 +9,19 @@
 import SwiftUI
 
 struct ScoutersOptionsView: View {
+    
+    let options = ["Scouters"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ForEach(0..<options.count){item in
+            Button(action: {
+                
+            }){
+                Text(self.options[item])
+                    .fontWeight(.semibold)
+                .frame(width: 220, height: 36)
+            }.buttonStyle(optionButtonStyle())
+        }
     }
 }
 

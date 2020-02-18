@@ -10,33 +10,21 @@ import SwiftUI
 
 struct TeamsOptionsView: View {
     
-    let options = ["Teams","Pit Scouting","Match Scouting", "Statistics"]
+    let options = ["Teams","Pre-comp Scouting","Pit Scouting","Match Scouting", "Statistics"]
     
     var body: some View {
         VStack{
-            Button(action: {
-                
-            }){
-                Text("Pit Scouting")
-                    .fontWeight(.semibold)
-                .frame(width: 220, height: 36)
-            }.buttonStyle(optionButtonStyle())
             
-            Button(action: {
-                
-            }){
-                Text("Matches Scouting")
-                    .fontWeight(.semibold)
-                .frame(width: 220, height: 36)
-            }.buttonStyle(optionButtonStyle())
+            ForEach(0..<options.count){item in
+                Button(action: {
+                    print("clicked")
+                }){
+                    Text(self.options[item])
+                        .fontWeight(.semibold)
+                    .frame(width: 220, height: 36)
+                }.buttonStyle(optionButtonStyle())
+            }
             
-            Button(action: {
-                
-            }){
-                Text("Statistics")
-                    .fontWeight(.semibold)
-                .frame(width: 220, height: 36)
-            }.buttonStyle(optionButtonStyle())
         }
     }
 }
