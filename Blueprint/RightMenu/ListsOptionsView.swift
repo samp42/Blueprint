@@ -22,7 +22,13 @@ struct ListsOptionsView: View {
                     Text(self.options[item])
                         .fontWeight(.semibold)
                     .frame(width: 220, height: 36)
-                }.buttonStyle(optionButtonStyle())
+                }.background(Color("RightButtonUnselected")).buttonStyle(optionButtonStyle())
+                    
+                
+                //.background(self.views[item] == ViewSelected.toString(self.global.viewSelected)() ? Color("DarkButtonSelected") : Color("DarkBlue"))
+                
+                Spacer()
+                    .frame(height: 8)
             }
             
         }

@@ -14,6 +14,5 @@ struct leftMenuButtonStyle: ButtonStyle{
         configuration.label
             .foregroundColor(Color.white)
             .font(.headline)
-            .overlay(RoundedRectangle(cornerRadius: 20.0).stroke(Color.white, lineWidth: 1.0))
     }
 }

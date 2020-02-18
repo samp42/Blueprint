@@ -14,14 +14,20 @@ struct ScoutersOptionsView: View {
     
     var body: some View {
         ForEach(0..<options.count){item in
+            
             Button(action: {
-                
+                print("hello")
             }){
+                
                 Text(self.options[item])
                     .fontWeight(.semibold)
-                .frame(width: 220, height: 36)
-            }.buttonStyle(optionButtonStyle())
-        }
+                    .frame(width: 220, height: 36)
+                
+            }//Styling
+            .background(Color("RightButtonUnselected"))
+                .clipShape(RoundedRectangle(cornerRadius: 18))
+                .buttonStyle(optionButtonStyle())
+        }//End of ForEach
     }
 }
 

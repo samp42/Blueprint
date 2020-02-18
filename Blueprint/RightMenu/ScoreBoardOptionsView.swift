@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ScoreBoardOptionsView: View {
     
-    let options = ["Score Table", "Match Schedule"]
+    let options = ["Score Table", "Match Details"]
     
     var body: some View {
         VStack{

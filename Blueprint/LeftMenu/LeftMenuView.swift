@@ -27,18 +27,26 @@ struct LeftMenuView: View {
             
             ForEach(0..<views.count){ item in
                 Button(action:{
-                    //to change
+                    
                     self.global.viewSelected = ViewSelected(rawValue: item)!
+                    
                 }){
-                    Text(self.views[item])
-                        .frame(width: 180, height: 40)
-                }.background(self.views[item] == ViewSelected.toString(self.global.viewSelected)() ? Color(white: 1, opacity: 1) : Color("DarkBlue"))
-                    .cornerRadius(22)
-                    .buttonStyle(leftMenuButtonStyle())
+    
+                        Text(self.views[item])
+                            .frame(width: 180, height: 40)
+                    
+                }//Styling
+                    .background(self.views[item] == ViewSelected.toString(self.global.viewSelected)() ? Color("DarkButtonSelected") : Color("DarkBlue"))
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .overlay(RoundedRectangle(cornerRadius: 20.0)
+                    .stroke(Color.white, lineWidth: 1.0))
+                .buttonStyle(leftMenuButtonStyle())
+                
                 
                 Spacer()
                     .frame(height: 10)
-            }
+                
+            }//End of ForEach
             
         }.padding(20)
     }

@@ -13,10 +13,6 @@ struct optionButtonStyle: ButtonStyle {
         
         configuration.label
             .foregroundColor(Color.white)
-            .background(Color.red)
-            .cornerRadius(18)
             .font(.subheadline)
-            .padding(.bottom, 6)
-            
     }
 }
