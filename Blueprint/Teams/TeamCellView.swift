@@ -7,9 +7,15 @@
 //
 
 import SwiftUI
-
+/*
 struct TeamCellView: View {
+    var _teamNumber: Int
+    
+    init(teamNumber: Int){
+        self._teamNumber = teamNumber
+    }
     var body: some View {
+        
         VStack(alignment: .leading){
             HStack{
                 /*Image("3990_2018")
@@ -17,7 +23,7 @@ struct TeamCellView: View {
                     .resizable()*/
                 
                 VStack{
-                    Text("3990")
+                    Text(String(self._teamNumber))
                         .font(.headline)
                     Text("Tech for Kids")
                         .font(.subheadline)
@@ -27,11 +33,15 @@ struct TeamCellView: View {
                 }
             }
         }.foregroundColor(Color.black)
+            .background(Color(white: 1, opacity: 0.3))
+            .frame(maxWidth:800)
     }
 }
 
 struct TeamCellView_Previews: PreviewProvider {
     static var previews: some View {
         TeamCellView()
+        //TeamCellView(teamNumber: Int)
     }
 }
+*/

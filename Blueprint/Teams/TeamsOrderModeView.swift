@@ -11,47 +11,22 @@ import SwiftUI
 struct TeamsOrderModeView: View {
     
     @State var orderMode: String = "Team Number"
-        
+    let orderModes = ["Team Number","Team Number","Best OPR","Best DPR"]
+    
     var body: some View {
         HStack{
             HStack{
-                Button(action: {
-                    self.orderMode = "Team Number"
-                }){
-                    Text("Team number")
-                        .frame(width: 130.0)
+                ForEach(0..<orderModes.count){
+                    item in
+                    Button(action:{
+                        
+                    }){
+                        Text(self.orderModes[item])
+                            .frame(width:148, height: 32)
+                            .offset(y: 4)
+                    }
                 }
-                
-                Spacer()
-                    .frame(width: 10)
-
-                Button(action: {
-                    self.orderMode = "Seed"
-                }){
-                    Text("Seed")
-                    .frame(width: 130.0)
-                }
-                
-                Spacer()
-                .frame(width: 10)
-                
-                Button(action: {
-                    self.orderMode = "Best OPR"
-                }){
-                    Text("OPR")
-                    .frame(width: 130.0)
-                }
-                
-                Spacer()
-                .frame(width: 10)
-                
-                Button(action: {
-                    self.orderMode = "Best DPR"
-                }){
-                    Text("DPR")
-                    .frame(width: 130.0)
-                }
-            }
+            }.frame(maxWidth: 800)
             
         }.padding(30)
         

@@ -33,7 +33,7 @@ struct TeamsView: View {
                 .frame(height: 30.0)
                 .cornerRadius(15.0)
 
-            //TeamsListView()
+            TeamsListView()
         }.background(Color.clear)
     }
 }

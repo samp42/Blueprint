@@ -35,39 +35,46 @@ class GlobalEnvironment: ObservableObject {
     /*func getSelectedView(viewToShow: ViewSelected)->Void{
         viewSelected = ViewSelected.viewToShow
     }*/
+    
+    //geometry
+    @Published var midSectionWidth = 0
 }
 
 struct ContentView: View {
     
     //variables
     @EnvironmentObject var global: GlobalEnvironment
+    
     public var teamSelected: Int? = 3990
     public var gameSelected: String? = "Infinite Recharge: 2020"
+    //var width = body.GeometryReader.screenGeometry.size.width
     
     var body: some View {
         //main divisions
-        ZStack(alignment: .top){
-            MainSectionView()
-            .frame(minWidth: 400, maxWidth: .infinity)
-            
-            HStack{
-                VStack{
-                    LeftMenuView()
+        GeometryReader{ screenGeometry in
+            ZStack(alignment: .top){
+                MainSectionView()
+                    .frame(width: screenGeometry.size.width)
+                
+                HStack{
+                    VStack{
+                        LeftMenuView()
+                        Spacer()
+                    }.padding(.top, 40)
+                .background(/*@START_MENU_TOKEN@*/Color("DarkBlue")/*@END_MENU_TOKEN@*/)
+                        .frame(width: 200, height: screenGeometry.size.height, alignment: .leading)
+                    
                     Spacer()
-                }.padding(.top, 40)
-            .background(/*@START_MENU_TOKEN@*/Color("DarkBlue")/*@END_MENU_TOKEN@*/)
-                .frame(minWidth: 200, maxWidth: 200, minHeight: 0, maxHeight: .infinity, alignment: .leading)
-                
-                Spacer()
-                    .frame(minWidth: (768-200-240))
-                
-                VStack{
-                    RightMenuView()
-                }.frame(width: 240)
-            }.frame(minWidth: 768, maxWidth: .infinity, minHeight: 500, maxHeight: .infinity, alignment: .top)
-                
-            displayView()
-                //.position(x: 480, y: 64)
+                        .frame(minWidth: (768-200-240))
+                    
+                    VStack{
+                        RightMenuView()
+                    }.frame(width: 240)
+                }.frame(minWidth: 768, maxWidth: .infinity, minHeight: 500, maxHeight: .infinity, alignment: .top)
+                    
+                self.displayView()
+                    //.position(x: 480, y: 64)
+            }
         }
         
     }

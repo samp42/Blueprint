@@ -42,6 +42,7 @@
 		1EC1A95A23E4801A00CDDCA0 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1A95923E4801A00CDDCA0 /* TeamView.swift */; };
 		1EC1A95C23E4805600CDDCA0 /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1A95B23E4805600CDDCA0 /* TeamDetailView.swift */; };
 		1ECCCC6F23DA5408008694DF /* MainSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECCCC6E23DA5408008694DF /* MainSectionView.swift */; };
+		1EDA27D123FCF848003A7575 /* OrderModeButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA27D023FCF848003A7575 /* OrderModeButtonStyle.swift */; };
 		1EE98DE323F8D7CB00854EF4 /* ScoutersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE98DE223F8D7CB00854EF4 /* ScoutersView.swift */; };
 		1EE98DE523F8D7DF00854EF4 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE98DE423F8D7DF00854EF4 /* ListsView.swift */; };
 		1EE98DE823F8D91800854EF4 /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE98DE723F8D91800854EF4 /* RankingView.swift */; };
@@ -108,6 +109,7 @@
 		1EC1A95923E4801A00CDDCA0 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		1EC1A95B23E4805600CDDCA0 /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
 		1ECCCC6E23DA5408008694DF /* MainSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionView.swift; sourceTree = "<group>"; };
+		1EDA27D023FCF848003A7575 /* OrderModeButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModeButtonStyle.swift; sourceTree = "<group>"; };
 		1EE98DE223F8D7CB00854EF4 /* ScoutersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutersView.swift; sourceTree = "<group>"; };
 		1EE98DE423F8D7DF00854EF4 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
 		1EE98DE723F8D91800854EF4 /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				1E664F2D23DE8BB80017F2CC /* TeamCellView.swift */,
 				1E92544C23D8C2AD007B0690 /* TeamsListView.swift */,
 				1E919B1323DB7D1C00714CD9 /* TeamsOrderModeView.swift */,
+				1EDA27D023FCF848003A7575 /* OrderModeButtonStyle.swift */,
 				1EC1A95B23E4805600CDDCA0 /* TeamDetailView.swift */,
 				1EC1A95923E4801A00CDDCA0 /* TeamView.swift */,
 				1E664F2F23DE8C410017F2CC /* TeamIndex.swift */,
@@ -449,6 +452,7 @@
 				1E0E164923E12E9400008F7A /* OptionsView.swift in Sources */,
 				1ECCCC6F23DA5408008694DF /* MainSectionView.swift in Sources */,
 				1E0E164523E1245F00008F7A /* TeamsOptionsView.swift in Sources */,
+				1EDA27D123FCF848003A7575 /* OrderModeButtonStyle.swift in Sources */,
 				1E2AD88823E674BF0098EE78 /* TeamsJsonParse.swift in Sources */,
 				1E6D2A4023D9F045004372CE /* LeftMenuView.swift in Sources */,
 				1E184A1B23D7EA32002878A8 /* matrix.cpp in Sources */,
